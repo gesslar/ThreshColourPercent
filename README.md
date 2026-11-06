@@ -7,4 +7,4 @@ In order to make proper use of this extension, you must have
 
 ## License
 
-`threshcolourpercent` is released under the [0BSD](LICENSE.txt).
+`threshcolourpercent` is released under the [0BSD](https://opensource.org/license/0bsd).
