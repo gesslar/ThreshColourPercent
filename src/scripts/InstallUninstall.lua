@@ -7,7 +7,7 @@ registerNamedEventHandler(
   "sysInstall",
   function(_, pkg)
     if pkg == userName then
-      cecho(colour .. "[__PKGNAME__]<r> Welcome to __PKGNAME__.\n")
+      cecho(colour .. "[__PKGNAME__]<r> Welcome to __PKGNAME__ __VERSION__.\n")
       deleteNamedEventHandler(userName, userName .. ":Install")
     end
   end
@@ -19,7 +19,7 @@ registerNamedEventHandler(
   "sysUninstall",
   function(_, pkg)
     if pkg == userName then
-      cecho(colour .. "[__PKGNAME__]<r> You have uninstalled __PKGNAME__.\n")
+      cecho(colour .. "[__PKGNAME__]<r> You have uninstalled __PKGNAME__ __VERSION__.\n")
       deleteNamedEventHandler(userName, userName .. ":Uninstall")
     end
   end
