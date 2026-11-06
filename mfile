@@ -1,7 +1,7 @@
 {
-  "package": "ThreshColorPercent",
-  "title": "Add colors to percents in Health bars",
-  "version": "2.0.1",
+  "package": "ThreshColourPercent",
+  "title": "Add colours to percents in Health bars",
+  "version": "3.0.0",
   "author": "gesslar",
   "icon": "percent.png",
   "dependencies": "",

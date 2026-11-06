@@ -1,11 +1,15 @@
 {
-  "name": "threshcolorpercent",
+  "name": "threshcolourpercent",
   "author": {
     "name": "gesslar"
   },
   "scripts": {
     "build": "npx -y @gesslar/muddy",
-    "watch": "npx -y @gesslar/muddy -w"
+    "watch": "npx -y @gesslar/muddy -w",
+    "major": "npx -y @gesslar/muddy version major --package && npm i",
+    "minor": "npx -y @gesslar/muddy version minor --package && npm i",
+    "patch": "npx -y @gesslar/muddy version patch --package && npm i",
+    "update": "npx -y npm-check-updates -u && npm install"
   },
   "license": "0BSD"
 }

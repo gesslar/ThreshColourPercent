@@ -1,4 +1,4 @@
--- Change the Color Values Here to what you want
+-- Change the Colour Values Here to what you want
 local percentages = {
   percent90 = "<green>",
   percent75 = "<yellow_green>",
@@ -8,7 +8,7 @@ local percentages = {
 }
 
 -- Change the below if you know what you're doing. 😁
-local function ColorPercent(number)
+local function ColourPercent(number)
   local result = ""
 
   if number >= 90 then
@@ -39,8 +39,8 @@ local per_ep = tonumber(matches[10])
 -- Get rid of the text that came in, we will be rewriting it
 deleteLine()
 
-local Hpbar = "HP: [ " .. hp .. "/" .. max_hp .. " " .. ColorPercent(per_hp) .. "% ]"
-local Spbar = "SP: [ " .. sp .. "/" .. max_sp .. " " .. ColorPercent(per_sp) .. "% ]"
-local Epbar = "EP: [ " .. ep .. "/" .. max_ep .. " " .. ColorPercent(per_ep) .. "% ]"
+local Hpbar = "HP: [ " .. hp .. "/" .. max_hp .. " " .. ColourPercent(per_hp) .. "% ]"
+local Spbar = "SP: [ " .. sp .. "/" .. max_sp .. " " .. ColourPercent(per_sp) .. "% ]"
+local Epbar = "EP: [ " .. ep .. "/" .. max_ep .. " " .. ColourPercent(per_ep) .. "% ]"
 
 cecho("\n" .. Hpbar .. " " .. Spbar .. " " .. Epbar .. "\n")
