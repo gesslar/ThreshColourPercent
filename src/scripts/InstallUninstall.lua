@@ -1,11 +1,26 @@
-function InstallUninstall(event, package)
-  if package ~= "__PKGNAME__" then return end
+local colour = "<light_sea_green>"
+local userName = "__PKGNAME__"
 
-  local colour = "<light_sea_green>"
-
-  if event == "sysInstall" then
-    cecho(colour .. "[__PKGNAME__]<r> Welcome to __PKGNAME__.\n")
-  else
-    cecho(colour .. "[__PKGNAME__]<r> You have uninstalled __PKGNAME__.\n")
+registerNamedEventHandler(
+  userName,
+  userName .. ":Install",
+  "sysInstall",
+  function(_, pkg)
+    if pkg == userName then
+      cecho(colour .. "[__PKGNAME__]<r> Welcome to __PKGNAME__.\n")
+      deleteNamedEventHandler(userName, userName .. ":Install")
+    end
   end
-end
+)
+
+registerNamedEventHandler(
+  userName,
+  userName .. ":Uninstall",
+  "sysUninstall",
+  function(_, pkg)
+    if pkg == userName then
+      cecho(colour .. "[__PKGNAME__]<r> You have uninstalled __PKGNAME__.\n")
+      deleteNamedEventHandler(userName, userName .. ":Uninstall")
+    end
+  end
+)

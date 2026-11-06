@@ -3,9 +3,6 @@
     "name": "InstallUninstall",
     "isActive": "yes",
     "isFolder": "no",
-    "eventHandlerList": [
-      "sysInstall",
-      "sysUninstall"
-    ]
+    "eventHandlerList": []
   }
 ]
